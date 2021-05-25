@@ -1117,7 +1117,8 @@ polygon(str_to_plot_2[,1:2],
 
 ![](brain_atlas_files/figure-gfm/plot_edges_poly_sm-1.png)<!-- -->
 
-\#Plotting structures
+
+# Plotting structures
 
 That is almost all we need to plot all structures at any given slice.
 Some wrangling is still needed to make this list usable. Since we used
