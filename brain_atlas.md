@@ -557,7 +557,7 @@ edge_det_sobel <- function(y, plane = "sagittal"){
 
 Now we can apply this function using a loop, which is a slow and
 inefficient implementation, but fast enough and convenient to check its
-progress. The loop containts another loop (through `lapply()`) which
+progress. The loop contains another loop (through `lapply()`) which
 will create lists of edge points within each slide. The structure is
 still the same as before - list of slices, each slice a list of
 structures - but instead of having all voxels we only keep the edge
@@ -1640,8 +1640,8 @@ RNA-seq](https://gtexportal.org/home/datasets) on this atlas.
 The GTEx measured transcripts through RNA-seq on [several brain
 regions](https://gtexportal.org/home/samplingSitePage):
 
-  - frontal cortex (frontal pole/Brodmann Area 24)
-  - anterior cyngulate cortex (Brodmann Area 9)
+  - frontal cortex (frontal pole/Brodmann Area 9)
+  - anterior cyngulate cortex (Brodmann Area 24)
   - amygdala
   - hippocampus
   - hypothalamus
@@ -2090,7 +2090,7 @@ plot_brain_gtex("KCNMA1")
 
 The code in this tutorial is clearly unpolished and may violate a number
 of good practices, as many complex/long routines can be simplified by
-breaking them up in simpler functions etc, vectorising, etc. The purpose
+breaking them up in simpler functions, vectorising, etc. The purpose
 however is to show the thinking behind it, and to be as explicit and
 readable as possible without being extremely long.
 
@@ -2106,7 +2106,7 @@ become a package, it is easier to have the user download small objects.
 ### Concave hull improvements
 
 As shown in the white matter example, the concave hull can perform quite
-bad in some complicated cases. It may be possible to improve the concave
+badly in some complicated cases. It may be possible to improve the concave
 hull reconstruction by densifying the clustered edge points.
 Densification is achieved by adding points between the existing points,
 so that the outline keeps the same shape but is made up of twice or
